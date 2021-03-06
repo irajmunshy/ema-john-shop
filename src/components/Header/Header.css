@@ -1,0 +1,47 @@
+.header {
+    text-align: center;
+    margin-top: 30px;
+}
+.header img {
+    height: 80px;
+    margin-bottom: 20px;
+}
+.header nav {
+    text-align: left;
+    background-color: #000;
+    line-height: 40px;
+    font-size: 20px;
+    padding: 10px 0;
+}
+nav a {
+    text-decoration: none;
+    color: #fff;
+    margin-right: 20px;
+    padding: 10px;
+}
+nav a:first-child {
+    margin-left: 40px;
+}
+nav a:hover {
+    background-color: gray;
+}
+
+.search-area {
+    background-color: #232123;
+    padding: 30px 0;
+}
+.search-area input {
+    width: 75%;
+    padding: 10px 0;
+    font-size: 25px;
+}
+.search-area svg:not(:root).svg-inline--fa {
+    color: #fff;
+    font-size: 35px;
+    padding-left: 15px;
+}
+.search-area span {
+    color: #FFB60C;
+    font-size: 20px;
+    padding-left: 10px;
+}

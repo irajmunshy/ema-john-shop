@@ -1,0 +1,30 @@
+* {
+    margin: 0;
+}
+.order-details h2 {
+    margin: 15px 0;
+    font-size: 30px;
+}
+.order-details h4 {
+    margin: 15px 0;
+    font-size: 22px;
+    font-weight: 400;
+}
+.total-order p {
+    color: red;
+    font-size: 25px;
+    font-weight: 500;
+}
+.tut {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px;
+}
+.order-btn {
+    margin-top: 10px;
+    background-color: #F6BE46;
+    border-radius: 5px;
+    padding: 8px 65px;
+    font-size: 17px;
+    cursor: pointer;
+}

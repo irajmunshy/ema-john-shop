@@ -1,23 +1,45 @@
-import logo from './logo.svg';
+import React from 'react';
 import './App.css';
+import Header from './components/Header/Header';
+// import Product from './components/Product/Product';
+import Shop from './components/Shop/Shop';
+import Review from './components/Review/Review';
+import Manage from './components/Manage/Manage';
+import NotPound from './components/NotPound/NotPound';
+import ProductDetail from './components/ProductDetail/ProductDetail';
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Link
+} from "react-router-dom";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Router>
+        <Header></Header>
+        <Switch>
+          <Route path="/shop">
+            <Shop></Shop>
+          </Route>
+          <Route path="/review">
+            <Review></Review>
+          </Route>
+          <Route path="/manage">
+            <Manage></Manage>
+          </Route>
+          <Route exact path="/">
+            <Shop></Shop>
+          </Route>
+          <Route path="/product/:productKey">
+            <ProductDetail></ProductDetail>
+          </Route>
+          <Route path="*">
+            <NotPound></NotPound>
+          </Route>
+        </Switch>
+      </Router>
     </div>
   );
 }
