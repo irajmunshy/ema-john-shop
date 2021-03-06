@@ -14,7 +14,8 @@ const Header = () => {
 
     return (
         <div className='header'>
-            <img src={logo} alt="logo"/>
+            {/* <img src={logo} alt="logo"/> */}
+            <h1>Bayzid</h1>
 
             <nav>
                 <Link to="/shop">Shop</Link>
